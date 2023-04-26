@@ -1,0 +1,86 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: lightgray;
+    min-height: 100%;
+    margin: 0;
+    /* Centering the feed: 
+    margin: auto;*/
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+}
+
+.header h1{
+    margin: auto;
+    width: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    padding: 10px 0;
+}
+
+
+.feed {
+    width: 400px;
+    /* Centering the feed: */
+    margin: auto; 
+    /* Adding display: flow-root to the feed so that the bottom margin of the last post from collapsing:
+    https://www.smashingmagazine.com/2019/07/margins-in-css/#parent-and-first-or-last-child-element */
+    display: flow-root;
+}
+
+
+.post {
+    background-color: white;
+    margin: 50px 0px;
+    width: 400px;
+
+}
+
+#post-head {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#post-head h2{
+    width: 90%;
+    margin: 0px;
+}
+
+#post-head span{
+    margin: 0;
+    color: rgba(211, 211, 211, 0.892);
+    line-height: 1.5;
+
+}
+
+#post-image {
+	width: 400px;
+	height: 300px;
+    object-fit: cover;
+    border: 0.5px lightgray;
+}
+
+#post-caption {
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(56, 54, 54);
+    padding: 7px;
+    margin: 0;
+}
+
+/*
+#post-head,
+#post-image,
+#post-caption {
+    background-color: white;
+ }
+ */
